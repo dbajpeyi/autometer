@@ -8,28 +8,20 @@
 <ion-view view-title="Home">
   <ion-content class="padding">
 	<div class="list">
-  	<label class="item item-input">
-    	<input type="text" placeholder="Enter your location">
-  	</label>
-  	<label class="item item-input">
-			<input type="text" placeholder="Where are you headed">
-  	</label>
-	</div>	
-	<div>
-		<button class="button button-block button-positive">
-  		Get cost	
-		</button>
+	  	<label class="item item-input">
+	  		<ion-google-place placeholder="Pickup address" ng-model="pickup" />
+	  	</label>
+	  	<label class="item item-input">
+	  		<ion-google-place placeholder="Drop location" ng-model="drop" />
+	  	</label>
 	</div>
-	<div class="padding-top">		
-	</div>
-	<div class="padding-top">		
-	</div>
-	<div class="padding-top">		
-	</div>
-		<div class="card" style="margin: 0 auto; width : 110px">
+	<button class="button button-block button-positive">
+		Find fare estimate
+	</button>
+	<div style="margin-top:2em;"></div>
+
 			<div class="item item-text-wrap">
-				<h2><strong style="color:#44B449;">&#x20b9; 215.33 *</strong></h2>	
+				<h2><strong style="color:#44B449;">&#x20b9; 215.33 *</strong></h2>
 			</div>
-	</div>
   </ion-content>
 </ion-view>
